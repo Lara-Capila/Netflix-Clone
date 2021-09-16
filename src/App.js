@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Lara Capil
+          Lara Capila
         </a>
       </header>
     </div>
