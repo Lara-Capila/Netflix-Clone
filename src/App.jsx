@@ -1,9 +1,20 @@
-import './App.css';
 import React from 'react';
+import { useContext } from 'react/cjs/react.development';
+
+import './App.css';
+import FeaturedMovie from './components/FeaturedMovie';
+import MoviesContext from './context/MoviesContext';
+import MainPage from './pages/MainPage';
 
 function App() {
+  const { featuredMovie } = useContext(MoviesContext);
+
   return (
-    <h1>Olá mundo!!!</h1>
+    <section>
+      { featuredMovie
+      && <FeaturedMovie /> }
+      <MainPage />
+    </section>
   );
 }
 
