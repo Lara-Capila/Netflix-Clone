@@ -18,6 +18,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/prop-types': ['off'],
     'no-console': ['off'],
     'consistent-return': ['off'],
     indent: [2, 2, { SwitchCase: 1 }],
