@@ -14,6 +14,7 @@ export default function MainPage() {
           <CarouselMovies items={ item.items } />
         </section>
       )) }
+      <hr />
     </main>
   );
 }
