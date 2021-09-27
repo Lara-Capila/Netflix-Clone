@@ -7,6 +7,7 @@ import MoviesContext from './context/MoviesContext';
 import MainPage from './pages/MainPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Loading from './components/Loading';
 
 function App() {
   const { featuredMovie } = useContext(MoviesContext);
@@ -15,7 +16,7 @@ function App() {
     <section>
       <Header />
       { featuredMovie
-      && <FeaturedMovie /> }
+        ? <FeaturedMovie /> : <Loading /> }
       <MainPage />
       <Footer />
     </section>
