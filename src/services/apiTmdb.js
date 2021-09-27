@@ -3,7 +3,8 @@ import axios from 'axios';
 // const API_BASE = 'https://api.themoviedb.org/3';
 
 const language = 'language=pt-BR';
-const apiKey = `api_key=${process.env.REACT_APP_TMDB_KEY}`;
+// const apiKey = `api_key=${process.env.REACT_APP_TMDB_KEY}`;
+const apiKey = 'api_key=1b838823975d55d83e006c04f3a4cd41';
 
 const originalsNetflix = `/discover/tv?with_network=213&${apiKey}&
   ${language}`;
