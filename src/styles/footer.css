@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+footer {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.phrases {
+  margin: 15px;
+}
+
+.phrases a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.author a {
+  color: #8257e5;
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.netflix a {
+  color:#e62a11;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.theMovie a {
+  color: #46b9d5;
+}
