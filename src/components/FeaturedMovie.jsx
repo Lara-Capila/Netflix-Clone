@@ -7,11 +7,15 @@ import '../styles/featuredMovie.css';
 
 export default function FeaturedMovie() {
   const { featuredMovie } = useContext(MoviesContext);
-  console.log(featuredMovie);
 
   const getYear = new Date(featuredMovie.data.first_air_date);
   const genresName = featuredMovie.data.genres.map((genre) => (genre.name));
 
+  const description = featuredMovie.data.overview;
+  if (description.length > 200) {
+    const descriptionSub = description.substring(0, 200);
+    return `${descriptionSub}...`;
+  }
   return (
     <section
       className="featured"
@@ -40,7 +44,7 @@ export default function FeaturedMovie() {
               Temporada
               { featuredMovie.data.number_of_seasons !== 1 ? 's' : '' }
             </div>
-            <div className="featured--description">{ featuredMovie.data.overview }</div>
+            <div className="featured--description">{ description }</div>
             <div className="featured--buttons">
               <button className="featured--watchbutton" type="button">
                 <FaPlay className=".featured--iconwatch" />
