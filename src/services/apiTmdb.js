@@ -36,7 +36,7 @@ export default {
   getHomeList: async () => [
     {
       slug: 'originals',
-      title: 'Originais Netflix',
+      title: 'Só na Netflix',
       items: await basicFetch(originalsNetflix),
     },
     {
